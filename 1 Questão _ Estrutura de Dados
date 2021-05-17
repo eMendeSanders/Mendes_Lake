@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main ()
+{
+//Exercicios de Estrutura de Dados - Engenharia da Computacao - Joao Victor Mendes - 2021.
+
+	//1) Escreva um programa que declare um inteiro, um real, e um char, e ponteiros para inteiro, real, char. Associe as variaveis aos ponteiros (use Modifique os valores de cada variavel usando os ponteiros Imprima os valores das variaveis antes e apos a modificaçao:
+	
+	int i= 3;
+	float f =  0.9;
+	char c = 'v';
+	
+	int *pint = &i;
+	float *pdouble = &f;
+	char *pchar = &c;
+	
+	*pint = 2;
+	*pdouble = 1.4;
+	*pchar = 'j';
+	
+	printf("\n Endereco Inteiro = %i", *pint);
+	printf("\n Endereco Real = %2.f", *pdouble);
+	printf("\n Endereco Char = %c", *pchar);
+	
+	getchar();
+	
+	return 0;
+}
